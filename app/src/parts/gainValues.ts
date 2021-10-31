@@ -19,5 +19,7 @@ function gainValues(
   theLastRow: number,
   lastColumn: number
 ): Values {
-  return sheet.getRange(startRow, startColumn, theLastRow, lastColumn).getValues();
+  // rowNumnberは実際に取得したい行数なので、最終行マイナス1する必要がある
+  const rowNumnber = theLastRow - 1;
+  return sheet.getRange(startRow, startColumn, rowNumnber, lastColumn).getValues();
 }
