@@ -1,4 +1,5 @@
 /**
+ * ValuesをPHPのマップ(key-value)に変換して出力します
  * @param  {GoogleAppsScript.Spreadsheet.Sheet} targetSheet
  * @param  {number} inputColumnOnTargetSheet
  * @param  {number} keyColumn
